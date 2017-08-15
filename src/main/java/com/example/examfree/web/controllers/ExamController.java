@@ -16,13 +16,11 @@ public class ExamController {
     @Autowired
     ExamDao examDao;
     @RequestMapping(method = RequestMethod.GET)
-    List<Exam> getAllExams() {
- List<Exam> a = new ArrayList<>();
-     a=   examDao.findAll();
-        System.out.println(a);
-     return a;
+    List<Exam> getAllExams()
+    {
+    List<Exam> a = new ArrayList<>();
+    a=examDao.findAll();
+    System.out.println(a);
+    return a;
     }
-
-
-
-}
+    }
